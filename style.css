@@ -30,6 +30,10 @@ textarea{
   border-radius: 15px;
 }
 
+.time-block:hover {
+  cursor: pointer;
+}
+
 .row {
   white-space: pre-wrap;
   height: 80px;
@@ -73,3 +77,5 @@ textarea{
   transition: all .3s ease-in-out; */
   
 }
+
+
