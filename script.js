@@ -20,6 +20,7 @@ for (let i = 9; i <= 17; i++) {
     $(`#${i}`).siblings('textarea').val(localStorage.getItem(`${i}`));
 };
 
+// color-code time-blocks into past, present, or future
 function taskTime() {
     // get current hour in 24hr format
     let dayHour = moment().hour();
@@ -27,27 +28,21 @@ function taskTime() {
 
     // loop over time blocks 
     $('.time-block').each(function() {
-        // get scheduled hour 
-        let scheduledHour = Number.parseInt($(this).attr('id').split('hour')[1]);
-        console.log(scheduledHour);
+        // get scheduled hour converted in 24hr format
+        let scheduledHour = parseInt(moment($(this).find('div').text(), ["hA"]).format("HH"));
 
         // correlate correct class to corresponding hour 
         if (scheduledHour < dayHour) {
-            
-            $(this).addClass('past');
             $(this).removeClass('present');
             $(this).removeClass('future');
-            
         }
         else if (scheduledHour === dayHour) {
             $(this).removeClass('past');
-            $(this).addClass('present');
             $(this).removeClass('future');
         }
         else {
             $(this).removeClass('past');
             $(this).removeClass('present');
-            $(this).addClass('future');
         }
     });    
 } 
