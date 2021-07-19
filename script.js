@@ -30,7 +30,6 @@ function taskTime() {
         // get scheduled hour 
         let scheduledHour = Number.parseInt($(this).attr('id').split('hour')[1]);
         console.log(scheduledHour);
-        alert('here');
 
         // correlate correct class to corresponding hour 
         if (scheduledHour < dayHour) {

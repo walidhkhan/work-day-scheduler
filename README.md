@@ -7,4 +7,4 @@ This is a work day scheduler, which:
 
 <img src="Screenshot.png">
 
-Link to deployed application: https://walidhkhan.github.io/password-generator/
+Link to deployed application: https://walidhkhan.github.io/work-day-scheduler/
