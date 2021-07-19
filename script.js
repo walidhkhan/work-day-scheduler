@@ -28,15 +28,17 @@ function taskTime() {
     // loop over time blocks 
     $('.time-block').each(function() {
         // get scheduled hour 
-        let scheduledHour = parseInt($(this).attr('id').split('hour')[1]);
+        let scheduledHour = Number.parseInt($(this).attr('id').split('hour')[1]);
         console.log(scheduledHour);
+        alert('here');
 
         // correlate correct class to corresponding hour 
         if (scheduledHour < dayHour) {
+            
             $(this).addClass('past');
             $(this).removeClass('present');
             $(this).removeClass('future');
-            console.log('completed');
+            
         }
         else if (scheduledHour === dayHour) {
             $(this).removeClass('past');
