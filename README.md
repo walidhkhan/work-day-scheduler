@@ -1,6 +1,6 @@
 # Work Day Scheduler
 
-<img src="https://i.ibb.co/jhs98yP/Work-Day-Scheduler.gif" width="700px">
+<img src="https://i.ibb.co/jhs98yP/Work-Day-Scheduler.gif" raw="true" length="" width="500px">
 
 ## Table of Contents
 - [Description](#Description)
